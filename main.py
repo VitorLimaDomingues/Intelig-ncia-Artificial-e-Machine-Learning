@@ -3,7 +3,7 @@ import random
 def verificar_autonomia_bike(capacidade_bateria:float, consumo: float)->str:
     autonomia_km = capacidade_bateria / consumo;
     if autonomia_km >= 50.0:
-        # Regra determinística(Cálculo exato)
+        # Regra determinística(Calculo exato)
         return f"PARA VIAGENS LONGA ({autonomia_km:1f}km)"
     return f"PARA VIAGENS URBANAS ({autonomia_km:1f}km)"
 
