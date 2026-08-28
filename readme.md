@@ -1,0 +1,3 @@
+# IA e Machine Learning
+
+- A matéria de Inteligência Artificial e Machine Learning aborda como computadores podem realizar tarefas que simulam capacidades humanas, como reconhecer padrões, tomar decisões e aprender com dados. Ao longo da disciplina, são estudados conceitos básicos de IA, funcionamento de algoritmos de aprendizado de máquina e formas de utilizar dados para treinar modelos capazes de fazer previsões ou classificações.
