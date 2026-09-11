@@ -35,7 +35,7 @@ info_agricultura = (
 
 # Exibir a tela de texto com a borda e fundo customizados sobre a imagem
 ax.text(0.05,0.95,info_agricultura, transform=ax.transAxes, fontsize=11,
-        verticalalignment='top', bbox=dict(boxstyle='round', facecolor='honeydew', alpha=0.9, edgecolor='darkgreen'))
 
+        verticalalignment='top', bbox=dict(boxstyle='round', facecolor='honeydew', alpha=0.9, edgecolor='darkgreen'))
 plt.tight_layout()
 plt.show()
