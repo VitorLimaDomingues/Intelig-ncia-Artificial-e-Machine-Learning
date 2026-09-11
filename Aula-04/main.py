@@ -1,4 +1,4 @@
-import matplotlib as plt
+import matplotlib.pyplot as plt
 from PIL import Image
 
 dados_telemetria_agricultura = {
@@ -10,13 +10,13 @@ dados_telemetria_agricultura = {
         "nitrogenio": 45.0
     },
     "status_plantacao": "Alerta de Estresse Critico",
-    "local_imagem": "campo.jpg"
+    "local_imagem": "Aula-04/campo.jpg"
 }
 
 img = Image.open(dados_telemetria_agricultura["local_imagem"])
 
 fig, ax = plt.subplots(figsize=(10, 6))
-ax.imShow(img)
+ax.imshow(img)
 ax.axis("off")
 
 # Define o título pegando os dados (drone_id) com tamanho
@@ -34,8 +34,8 @@ info_agricultura = (
 )
 
 # Exibir a tela de texto com a borda e fundo customizados sobre a imagem
-ax.text(0.05,0.95,info_agricultura, transofrm=ax.transAxes, fontSize=11,
-        verticalaligment='top', bbox=dict(boxstyle='round', facecolor='honeydrew', alpha=0.9, edgecolor='darkgreen'))
+ax.text(0.05,0.95,info_agricultura, transform=ax.transAxes, fontsize=11,
+        verticalalignment='top', bbox=dict(boxstyle='round', facecolor='honeydew', alpha=0.9, edgecolor='darkgreen'))
 
 plt.tight_layout()
 plt.show()
