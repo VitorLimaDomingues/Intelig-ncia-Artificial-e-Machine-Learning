@@ -19,4 +19,23 @@ fig, ax = plt.subplots(figsize=(10, 6))
 ax.imShow(img)
 ax.axis("off")
 
+# Define o título pegando os dados (drone_id) com tamanho
+
 plt.title(f"Monitoramento do Campo: Drone {dados_telemetria_agricultura}")
+
+# Prepara o bloco de texto com os dados da telemtria
+
+info_agricultura = (
+    f"TELEMETRIA DE CAMPO\n"
+    f"UMIDADE DO SOLO: {dados_telemetria_agricultura['sensores_solo']}%\n"
+    f"TEMPERATURA DO SOLO: {dados_telemetria_agricultura['sensores_solo']['temperatura_solo']}%\n"
+    f"NIROGÊNIO: {dados_telemetria_agricultura['sensores_solo']['nitrogenio']}%\n"
+    f"STATUS: {dados_telemetria_agricultura['status_plantacao']}%\n"
+)
+
+# Exibir a tela de texto com a borda e fundo customizados sobre a imagem
+ax.text(0.05,0.95,info_agricultura, transofrm=ax.transAxes, fontSize=11,
+        verticalaligment='top', bbox=dict(boxstyle='round', facecolor='honeydrew', alpha=0.9, edgecolor='darkgreen'))
+
+plt.tight_layout()
+plt.show()
