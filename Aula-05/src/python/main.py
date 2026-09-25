@@ -13,7 +13,7 @@ def gerar_pdf(filename="relatorio.pdf"):
 
     dados=[
         ["Métrica", "Valor"],
-        ["Horas de Desenvolvimento", "16.0H"]
+        ["Horas de Desenvolvimento", "16.0H"],
         ["Horas Perdidas(Bugs)", "4.5H"],
         ["Valor Líquido Gerado"]
     ]
